@@ -57,102 +57,80 @@ The flowchart below summarizes the key steps in calculating WoE and IV:
 
 ## Demo
 
-### 1. Introduction to the WoE Algorithm
-Explore how the monotonic Weight of Evidence (WoE) algorithm operates through a **mountaineering analogy**.
-
-![Introduction to the WoE Algorithm](plots/demo/WoE_demo.003.png)
-
----
-
-### 2. Identifying the Trend
-The algorithm identifies the **overall trend** in the data (upward in this case), allowing complex data to be transformed into **meaningful numerical values**.
-
-![Identifying the Trend](plots/demo/WoE_demo.004.png)
-
----
-
-### 3. Sampling the Data
-The algorithm samples data from **left to right**, representing variables like utilization and delinquency rates.
-
-![Sampling the Data](plots/demo/WoE_demo.005.png)
-
----
-
-### 4. Initializing the WoE Bins
-Bins are initialized for the **Weight of Evidence (WoE)** while maintaining **flexibility** in how the data is grouped.
-
-![Initializing the WoE Bins](plots/demo/WoE_demo.006.png)
-
----
-
-### 5. Ensuring Monotonicity: Backtracking
-To maintain **monotonic WoE values**, the algorithm creates new bins when the data follows the trend. When it does not, backtracking occurs to **merge bins** and restore monotonicity.
-
-![Backtracking for Monotonicity](plots/demo/WoE_demo.007.png)
-
----
-
-### 6. Combining Bins for Sufficient Data
-Bins are combined to ensure each has **enough data** for reliable analysis.
-
-![Combining Bins for Sufficient Data](plots/demo/WoE_demo.008.png)
-
----
-
-### 7. Final Result: Forward Pass
-The final result shows **monotonic WoE values** in the forward direction, visualized as **base camps** on the data.
-
-![Final Result: Forward Pass](plots/demo/WoE_demo.009.png)
-
-## Demo
-
 **Step 1: Introduction to the WoE Algorithm**  
-Explore how the monotonic Weight of Evidence (WoE) algorithm operates through a **mountaineering analogy**.
+Explore how the monotonic **Weight of Evidence (WoE)** algorithm operates through a **mountaineering analogy**.
 
 ![Introduction to the WoE Algorithm](plots/demo/WoE_demo.003.png)
 
 ---
 
 **Step 2: Identifying the Trend**  
-The algorithm identifies the **overall trend** in the data (upward in this case), allowing complex data to be transformed into **meaningful numerical values**.
+The algorithm identifies the **overall trend** in the data (upward in this case), transforming complex data into **meaningful numerical values**.
 
 ![Identifying the Trend](plots/demo/WoE_demo.004.png)
 
 ---
 
 **Step 3: Sampling the Data**  
-The algorithm samples data from **left to right**, representing variables like utilization and delinquency rates.
+The algorithm samples data from **left to right**, covering variables like **utilization** and **delinquency rates**.
 
 ![Sampling the Data](plots/demo/WoE_demo.005.png)
 
 ---
 
 **Step 4: Initializing the WoE Bins**  
-Bins are initialized for the **Weight of Evidence (WoE)** while maintaining **flexibility** in how the data is grouped.
+Bins are initialized for the **Weight of Evidence (WoE)**, maintaining **flexibility** in data grouping.
 
 ![Initializing the WoE Bins](plots/demo/WoE_demo.006.png)
 
 ---
 
 **Step 5: Ensuring Monotonicity: Backtracking**  
-To maintain **monotonic WoE values**, the algorithm creates new bins when the data follows the trend. When it does not, backtracking occurs to **merge bins** and restore monotonicity.
+To maintain **monotonic WoE values**, the algorithm creates new bins when the trend is followed. If not, it backtracks to **merge bins** and restore monotonicity.
 
 ![Backtracking for Monotonicity](plots/demo/WoE_demo.007.png)
 
 ---
 
 **Step 6: Combining Bins for Sufficient Data**  
-Bins are combined to ensure each has **enough data** for reliable analysis.
+Bins are merged to ensure each contains **sufficient data** for accurate analysis.
 
 ![Combining Bins for Sufficient Data](plots/demo/WoE_demo.008.png)
 
 ---
 
 **Step 7: Final Result: Forward Pass**  
-The final result shows **monotonic WoE values** in the forward direction, visualized as **base camps** on the data.
+The final result shows **monotonic WoE values** in the forward direction, depicted as **base camps** on the data.
 
 ![Final Result: Forward Pass](plots/demo/WoE_demo.009.png)
 
+---
+
+**Step 8: Running the Algorithm in Reverse**  
+The algorithm runs **in reverse**, from right to left, following the same process to ensure **consistency**.
+
+![Running the Algorithm in Reverse](plots/demo/WoE_demo.011.png)
+
+---
+
+**Step 9: Combining Bins in Reverse**  
+Bins are merged in the reverse direction while ensuring all criteria, like **sufficient data** and **monotonicity**, are satisfied.
+
+![Combining Bins in Reverse](plots/demo/WoE_demo.013.png)
+
+---
+
+**Step 10: Final Result: Reverse Pass**  
+The final result shows **monotonic WoE values** in the reverse direction.
+
+![Final Result: Reverse Pass](plots/demo/WoE_demo.014.png)
+
+---
+
+**Step 11: Comparing Forward & Backward Results**  
+Results from both the **forward** and **reverse** passes are compared. The algorithm selects the **WoE values** with the highest **Information Value (IV)** for each bin.
+
+![Comparing Forward & Backward Results](plots/demo/WoE_demo.015.png)
 
 ## Requirements
 - Python 3.x
