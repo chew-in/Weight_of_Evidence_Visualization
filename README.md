@@ -56,12 +56,10 @@ where:
 ### Log-Odds
 The log-odds transform the probability of an event into a logarithmic scale. It is defined as:
 
-\[
-\text{Log-Odds} = \ln\left(\frac{p}{1-p}\right)
-\]
+$$\text{Log-Odds} = \ln\left(\frac{p}{1-p}\right)$$
 
-Where:
-- \( p \) is the probability of the event occurring (e.g., the probability of default).
+where:
+- $p$ is the probability of the event occurring (e.g., the probability of default).
 
 ---
 
