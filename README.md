@@ -106,6 +106,10 @@ The final result shows **monotonic WoE values** in the forward direction, depict
 
 ---
 
+![Black](plots/demo/WoE_demo.010.png)
+
+---
+
 **Step 8: Running the Algorithm in Reverse**  
 The algorithm runs **in reverse**, from right to left, following the same process to ensure **consistency**.
 
