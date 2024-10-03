@@ -134,7 +134,7 @@ The final result shows **monotonic WoE values** in the reverse direction.
 **Step 11: Comparing Forward & Backward Results**  
 Results from both the **forward** and **reverse** passes are compared. The algorithm selects the **WoE values** with the highest **Information Value (IV)** for each bin.
 
-![Comparing Forward & Backward Results](plots/demo/WoE_demo.015.png)
+![Comparing Forward & Backward Results](plots/demo/WoE_demo.015_2.png)
 
 ## Requirements
 - Python 3.x
