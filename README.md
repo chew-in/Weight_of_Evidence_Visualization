@@ -41,7 +41,7 @@ The Weight of Evidence quantifies how much each category contributes to the like
 
 $$\text{WoE} = \ln\left(\frac{\text{Good Rate}}{\text{Bad Rate}}\right) = \ln\left(\frac{p}{1-p}\right)$$
 
-Where:
+where:
 - $p = \frac{\text{Number of Good Events}}{\text{Total Number of Good Events}}$
 - $1-p = \frac{\text{Number of Bad Events}}{\text{Total Number of Bad Events}}$
 
@@ -49,7 +49,8 @@ Where:
 Information Value measures the predictive power of a feature and is calculated as:
 
 $$\text{IV} = \sum (\text{Good Rate} - \text{Bad Rate}) \times \text{WoE}$$
-Where:
+
+where:
 - The sum is taken over all categories of the attribute.
 
 ### Log-Odds
