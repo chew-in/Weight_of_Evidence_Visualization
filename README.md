@@ -37,27 +37,74 @@ Incorporating monotonicity in WoE transformations further enhances model **accur
   Contains example datasets for simulations, used purely for demonstration.
 
 ## Algorithm Flowchart
-Here is the algorithm flowchart:
+The flowchart below summarizes the key steps in calculating WoE and IV:
 ![Algorithm Flowchart](plots/flowchart.png)
+1. **Check if the Attribute is Categorical**  
+   If the raw attribute is categorical, WoE is calculated by category. Otherwise, proceed to binning.
+2. **Initialize WoE Bins**  
+   For numerical attributes, bins are initialized (e.g., using equal-width or quantile binning).
+3. **Collapse WoE Bins**  
+   Optionally, bins may be collapsed to reduce the number of distinct groups based on similarity in WoE values.
+4. **Combine WoE Bins**  
+   Further bin combination can be applied to smooth the WoE values.
+5. **Check Threshold**  
+   The process checks if WoE meets a predefined threshold (e.g., based on bin size or delinquency rate differences). If not, continue adjusting bins.
+6. **Calculate WoE & IV**  
+   Once the bins are finalized, the WoE and IV metrics are calculated, providing insights into the predictive power of the attribute.
+
 
 ## Figures
 
-
 ## Demo
-Introduction to the WoE Algorithm - Explore how the monotonic WoE algorithm operates through a mountaineering analogy.
+
+### 1. Introduction to the WoE Algorithm
+Explore how the monotonic Weight of Evidence (WoE) algorithm operates through a **mountaineering analogy**.
+
 ![Introduction to the WoE Algorithm](plots/demo/WoE_demo.003.png)
-Identifying the Trend - The algorithm identifies the overall trend, which is upward in this case, allowing for the transformation of complex data into numerical values.
-![Introduction to the WoE Algorithm](plots/demo/WoE_demo.003.png)
-Sampling the Data: Running the Algorithm from Left to Right
-Data points are sampled from left to right, representing utilization and delinquency rates.
-Initializing the WoE Bins
-Bins for the Weight of Evidence are initialized while maintaining numerical flexibility.
-Backtracking to Ensure Monotonicity
-To ensure monotonic WoE values, a new bin is created when values follow the trend; otherwise, bins are merged. If the trend is not followed, backtracking occurs to combine the last two bins and restore monotonicity.
-Combining Bins to Ensure Sufficient Data
-Bins are combined to ensure that each contains sufficient data for reliable analysis.
-Final Result: Forward Pass
-The final result displays monotonic WoE values in the forward direction, represented as base camps on the data.
+
+---
+
+### 2. Identifying the Trend
+The algorithm identifies the **overall trend** in the data (upward in this case), allowing complex data to be transformed into **meaningful numerical values**.
+
+![Identifying the Trend](plots/demo/WoE_demo.004.png)
+
+---
+
+### 3. Sampling the Data
+The algorithm samples data from **left to right**, representing variables like utilization and delinquency rates.
+
+![Sampling the Data](plots/demo/WoE_demo.005.png)
+
+---
+
+### 4. Initializing the WoE Bins
+Bins are initialized for the **Weight of Evidence (WoE)** while maintaining **flexibility** in how the data is grouped.
+
+![Initializing the WoE Bins](plots/demo/WoE_demo.006.png)
+
+---
+
+### 5. Ensuring Monotonicity: Backtracking
+To maintain **monotonic WoE values**, the algorithm creates new bins when the data follows the trend. When it does not, backtracking occurs to **merge bins** and restore monotonicity.
+
+![Backtracking for Monotonicity](plots/demo/WoE_demo.007.png)
+
+---
+
+### 6. Combining Bins for Sufficient Data
+Bins are combined to ensure each has **enough data** for reliable analysis.
+
+![Combining Bins for Sufficient Data](plots/demo/WoE_demo.008.png)
+
+---
+
+### 7. Final Result: Forward Pass
+The final result shows **monotonic WoE values** in the forward direction, visualized as **base camps** on the data.
+
+![Final Result: Forward Pass](plots/demo/WoE_demo.009.png)
+
+
 
 ## Requirements
 - Python 3.x
