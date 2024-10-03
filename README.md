@@ -38,6 +38,7 @@ Incorporating monotonicity in WoE transformations further enhances model **accur
 
 ### Weight of Evidence (WoE)
 The Weight of Evidence quantifies how much each category contributes to the likelihood of an event occurring (e.g., default). It is calculated as:
+$$\text{WoE} = \ln\left(\frac{\text{Good Rate}}{\text{Bad Rate}}\right) = \ln\left(\frac{p}{1-p}\right)$$
 
 \[
 \text{WoE} = \ln\left(\frac{\text{Good Rate}}{\text{Bad Rate}}\right) = \ln\left(\frac{p}{1-p}\right)
