@@ -40,6 +40,7 @@ Incorporating monotonicity in WoE transformations further enhances model **accur
 The Weight of Evidence quantifies how much each category contributes to the likelihood of an event occurring (e.g., default). It is calculated as:
 
 $$\text{WoE} = \ln\left(\frac{\text{Good Rate}}{\text{Bad Rate}}\right) = \ln\left(\frac{p}{1-p}\right)$$
+
 Where:
 - $p = \frac{\text{Number of Good Events}}{\text{Total Number of Good Events}}$
 - $1-p = \frac{\text{Number of Bad Events}}{\text{Total Number of Bad Events}}$
@@ -83,6 +84,9 @@ The flowchart below summarizes the key steps in calculating WoE and IV:
 
 
 ## Figures
+![Log-odds on Original Data](plots/figures/all_original.png)
+![Log-odds on 4-bin Data](plots/figures/all_4bin_line.png)
+![Log-odds on 10-bin Data](plots/figures/all_10bin_line.png)
 
 ## Demo
 
