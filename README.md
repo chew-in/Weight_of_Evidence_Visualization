@@ -83,10 +83,11 @@ The flowchart below summarizes the key steps in calculating WoE and IV:
 
 ## Figures
 The following figures demonstrate the transformation of original data into bins and the calculation of **log-odds** and **Weight of Evidence (WoE)** for credit risk modeling:
+
 1. **Logistic Regerssion**  
    This figure illustrates the results of logistic regression applied directly to the original data, without any **log-odds** or **WoE** transformation.
    
-   ![Logistic Regression](plots/figures/logistic_regression_plot.png)
+   ![Logistic Regression](plots/figures/logistic_regression_plot_without_woe.png)
 
 1. **Original Data**  
    The raw data with **log-odds** and **WoE** values calculated for each data point.
