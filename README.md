@@ -92,17 +92,17 @@ The following figures demonstrate the transformation of original data into bins 
 1. **Original Data**  
    The raw data with **log-odds** and **WoE** values calculated for each data point.
    
-   ![Log-odds on Original Data](plots/figures/all_original.png)
+   ![Log-odds on Original Data](plots/figures/woe_original.png)
 
 1. **Data Binned into 10 Bins**  
    The data is grouped into 10 bins, with **log-odds** and **WoE** values calculated for each bin.
    
-   ![Log-odds on 10-bin Data](plots/figures/all_10bin_line.png)
+   ![Log-odds on 10-bin Data](plots/figures/woe_10_bin.png)
 
 1. **Data Binned into 4 Bins**  
    The data is grouped into 4 broader bins, and **log-odds** and **WoE** values are calculated for each bin.
    
-   ![Log-odds on 4-bin Data](plots/figures/all_4bin_line.png)
+   ![Log-odds on 4-bin Data](plots/figures/woe_4_bin.png)
 
 
 ## Demo
