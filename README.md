@@ -39,11 +39,11 @@ Incorporating monotonicity in WoE transformations further enhances model **accur
 ### Weight of Evidence (WoE)
 The Weight of Evidence quantifies how much each category contributes to the likelihood of an event occurring (e.g., default):
 
-$$\text{WoE} = \ln\left(\frac{\text{Good Rate}}{\text{Bad Rate}}\right) = \ln\left(\frac{p}{1-p}\right)$$
+$$\text{WoE}_i = \ln\left(\frac{\text{Good Rate}_i}{\text{Bad Rate}_i}\right) = \ln\left(\frac{p_i}{1-p_i}\right)$$
 
 where:
-- $p = \frac{\text{Number of Good Events}}{\text{Total Number of Good Events}}$
-- $1-p = \frac{\text{Number of Bad Events}}{\text{Total Number of Bad Events}}$
+- $p_i = \frac{\text{Number of Good Events in Bin }i}{\text{Total Number of Good Events Across All Bins}}$
+- $1-p_i = \frac{\text{Number of Bad Events in Bin }i}{\text{Total Number of Bad Events Across All Bins}}$
 
 ### Information Value (IV)
 Information Value measures the predictive power of a feature:
