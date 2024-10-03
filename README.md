@@ -45,14 +45,6 @@ where:
 - $p_i = \frac{\text{Number of Good Events in Bin }i}{\text{Total Number of Good Events Across All Bins}}$
 - $1-p_i = \frac{\text{Number of Bad Events in Bin }i}{\text{Total Number of Bad Events Across All Bins}}$
 
-### Information Value (IV)
-Information Value measures the predictive power of a feature:
-
-$$\text{IV} = \sum (\text{Good Rate} - \text{Bad Rate}) \times \text{WoE}$$
-
-where:
-- The sum is taken over all categories of the attribute.
-
 ### Log-Odds
 The log-odds transform the probability of an event into a logarithmic scale:
 
@@ -63,6 +55,23 @@ where:
 
 Below is an example demonstrating the calculation of Weight of Evidence (WoE) and Information Value (IV) in the context of credit risk modeling.
 ![Introduction to the WoE Algorithm](plots/demo/WoE_demo.002.png)
+
+### Information Value (IV)
+Information Value measures the predictive power of a feature:
+
+$$\text{IV} = \sum (\text{Good Rate} - \text{Bad Rate}) \times \text{WoE}$$
+
+where:
+- The sum is taken over all categories of the attribute.
+
+| IV                  | Variable Predictiveness           |
+|---------------------|-----------------------------------|
+| < 0.03              | Not useful for prediction         |
+| 0.03 to 0.1         | Weak predictive power             |
+| 0.1 to 0.3          | Medium predictive power           |
+| 0.3 to 0.5          | Strong predictive power           |
+| > 0.5               | Suspicious predictive power       |
+
 
 ## Algorithm Flowchart
 The flowchart below summarizes the key steps in calculating WoE and IV:
