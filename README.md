@@ -82,9 +82,31 @@ The flowchart below summarizes the key steps in calculating WoE and IV:
 
 
 ## Figures
-![Log-odds on Original Data](plots/figures/all_original.png)
-![Log-odds on 10-bin Data](plots/figures/all_10bin_line.png)
-![Log-odds on 4-bin Data](plots/figures/all_4bin_line.png)
+The following figures demonstrate the process of transforming original data into bins and calculating the log-odds and Weight of Evidence (WoE) for credit risk modeling:
+
+Here’s how you can introduce the figures in Markdown format along with the images:
+
+markdown
+Copy code
+## Visualizing Data and WoE Calculation
+
+The following figures demonstrate the transformation of original data into bins and the calculation of **log-odds** and **Weight of Evidence (WoE)** for credit risk modeling:
+
+1. **Original Data**  
+   The raw data with **log-odds** and **WoE** values calculated for each data point.
+   
+   ![Log-odds on Original Data](plots/figures/all_original.png)
+
+2. **Data Binned into 10 Bins**  
+   The data is grouped into 10 bins, with **log-odds** and **WoE** values calculated for each bin.
+   
+   ![Log-odds on 10-bin Data](plots/figures/all_10bin_line.png)
+
+3. **Data Binned into 4 Bins**  
+   The data is grouped into 4 broader bins, and **log-odds** and **WoE** values are calculated for each bin.
+   
+   ![Log-odds on 4-bin Data](plots/figures/all_4bin_line.png)
+
 
 ## Demo
 
